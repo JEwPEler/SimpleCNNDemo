@@ -1,0 +1,126 @@
+﻿QFrame#tranFrameBase {
+    background: #16181C;
+}
+
+QFrame {
+    outline: none;
+    border: none;
+    background: #16181C;
+}
+
+
+QFrame#line1{
+    color: qlineargradient(spread:reflect, x1:0.5, y1:0, x2:1, y2:0, stop:0 rgba(102, 4, 4, 255), stop:0.397727 rgba(184, 37, 37, 255));
+}
+
+QScrollBar:vertical{
+    background: #191B1F;
+    width: 7px;
+    margin: 0px 0 0px 0;
+}
+
+QScrollBar::handle:vertical{
+    background: #2F3134;
+    min-height: 20px;
+    margin: 0 0 0 0;
+    border-radius: 3px;
+    border: none;
+}
+
+QScrollBar::handle:hover{
+    background: #3B3C40;
+    min-height: 20px;
+    margin: 0 0 0 0;
+    border-radius: 3px;
+    border: none;
+}
+
+QScrollBar::add-line:vertical{
+    background: #191B1F;
+    height: 0px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical{
+    background: #191B1F;
+    height: 0px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical{
+    background: none;
+}
+
+QScrollBar:horizontal {
+    height: 0px;
+}
+
+QLabel {
+    color: #807E8D;
+    font: 75 16pt "华文行楷";
+    background: #16181c;
+}
+
+
+QTabWidget {
+    background: #16181c;
+    border: none;
+    margin-right: 5px;
+}
+
+QTabWidget::pane {
+    background: #16181c;
+    border-top: 1px solid #B82525; 
+    padding-top: 10px;
+}
+
+QTabBar::tab{
+    width: 110px;
+    padding: 10px;
+    color: gray;
+    font-size: 13px;
+    font-weight: bold;
+    background: #16181c;
+}
+
+QTabBar::tab:hover{
+    color: #DCDDE4;
+}
+
+QTabBar::tab:selected{
+    background: #B82525;
+    color: #DCDDE4;
+}
+
+QTabWidget::tab-bar{
+    alignment: left;
+}
+
+QTableWidget {
+    background: #16181C;
+    alternate-background-color: #1A1C20;
+    border: none;
+    color: #DCDDE4;
+}
+
+QTableWidget::item {
+    border: none;
+    outline: none;
+    outline-style: none;
+}
+
+
+QTableWidget::item:hover {
+    background: #313337;
+}
+
+QTableWidget::item:selected {
+    background: #313337;
+}
+
+QAbstractItemView {
+    outline: none;
+}
+

@@ -1,0 +1,23 @@
+QPushButton{
+    border: none;
+    font: bold;
+    font-size: 22px;
+}
+
+QPushButton#closeButton, QPushButton#minButton, QPushButton#maxButton {
+    color: #828487;
+}
+
+QPushButton#closeButton::hover, QPushButton#minButton::hover, QPushButton#maxButton::hover {
+    color: #DCDDE4;
+}
+
+
+QLabel{
+    font: 75 14pt "Agency FB";
+    color: #FFFFFF;
+}
+
+QFrame#line1{
+    color: #161619;
+}

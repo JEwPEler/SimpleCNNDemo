@@ -1,0 +1,2 @@
+model_checkpoint_path: "F:\\pelfiles\\works\\grad_code\\lenet5\\model\\model.ckpt-51100"
+all_model_checkpoint_paths: "F:\\pelfiles\\works\\grad_code\\lenet5\\model\\model.ckpt-51100"

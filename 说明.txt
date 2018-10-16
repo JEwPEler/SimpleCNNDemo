@@ -1,0 +1,44 @@
+1.features文件夹：
+	1.1：主要将功能与界面联系起来，比如开始停止训练按钮等
+	
+2.lnet5文件夹：
+	2.1：LeNet5相关功能的实现
+	2.2：data32为数据集文件夹，model为模型存放位置，提供了一个训练好的可用模型
+	2.3：TrainThread为训练相关文件，EvlThread为评估功能文件，OnePic为单图预测相关功能。
+	2.4：ImgProcess帮助读入图片，Inference定义LeNet5网络。
+	2.5：训练中每10步提示一次信息，50步保存一次，在界面不可修改，只能在代码修改
+	2.6：评估固定5次，只能在源代码修改
+	
+3.resnet文件夹：
+	3.1：Resnet Inception v2网络相关功能实现
+	3.2：dataset内为TFRecord数据集文件，log_eval_test为评估相关信息保存文件夹，可在tensorboard中查看详细信息
+	3.3：log为模型保存位置，因模型太大不提供训练好的模型，重新训练预估为数小时1500步左右。
+	3.4：nets、preprocessing均为从官方下载的支持文件夹，主要被应用于单图预测功能，其中很多文件为不必要，不过没有去甄别剔除
+	3.5：TrainThread为训练相关文件，EvlThread为评估功能文件，OnePic为单图预测相关功能。
+	3.6：除了训练步数完成会保存模型，其它时候是程序自动决定什么时候保存
+	3.7：inception_resnet_v2_2016_08_30为官方提供的模型文件，inception_resnet_v2提供网络模型定义，inception_preprocessing帮助读入文件
+	
+4.QSS文件夹：
+	界面风格设置相关文件
+
+5.resource文件夹：
+	界面（单图预测界面）初始图片保存位置
+
+6.test_imgs文件夹：
+	6.1：traffic_signs为收集的图片数据，可以用来制备TFRecord文件，文件夹名修改后制作的文件不能用于训练（训练代码读入的文件名的问题），或者用于测试单图
+
+7.utils文件夹：
+	dataset_utils为支持文件，其它分别为图片尺寸重置与TFRecord文件制作功能文件
+
+8.widgets文件夹：
+	8.1：base为一些基础类与调用函数，matplotForPyqt5提供数据图显示支持
+	8.2：selfFrameBase为训练评估基础类，onePicFrameBase为单图预测界面基础类
+	8.3：其它为各部分界面类，除base与matplotForPyqt5外，其它均可双击打开独立运行
+
+9.main_ui为主界面，双击打开即可
+
+10.还有一些验证处理没做，所以可能因为操作错误程序崩掉。
+
+11.在Resnet界面，如果中途点击停止训练或评估，会出现主界面卡死现象，这是主界面在等待线程完全停止，一两分钟后界面会恢复。
+
+12.requirements.txt为前置包列表
