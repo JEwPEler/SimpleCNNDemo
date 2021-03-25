@@ -65,7 +65,7 @@ PyWavelets==0.5.2
 pywin32==223
 pywin32-ctypes==0.1.2
 pywinauto==0.6.4
-PyYAML==3.12
+PyYAML==5.4
 Quamash==0.6.0
 queuelib==1.4.2
 requests==2.18.4
