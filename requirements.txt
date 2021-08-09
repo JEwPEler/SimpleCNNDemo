@@ -62,7 +62,7 @@ python-dateutil==2.6.1
 python-mode.el==6.2.3
 pytz==2017.3
 PyWavelets==0.5.2
-pywin32==223
+pywin32==301
 pywin32-ctypes==0.1.2
 pywinauto==0.6.4
 PyYAML==3.12
